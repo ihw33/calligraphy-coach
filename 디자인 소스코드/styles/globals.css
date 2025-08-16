@@ -1,0 +1,267 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* 붓글씨 앱 디자인 토큰 */
+  --brand-primary: #E53935;
+  --brand-secondary: #2962FF;
+  --accent-positive: #2E7D32;
+  --accent-warning: #F9A825;
+  --accent-error: #D32F2F;
+  --ink-strong: #111111;
+  --ink-base: #333333;
+  --ink-muted: #6B7280;
+  --bg-page: #FFFFFF;
+  --bg-subtle: #F7F7F9;
+  --bg-elevated: #FFFFFF;
+  --line-divider: #E5E7EB;
+  
+  /* 기존 시스템과 매핑 */
+  --font-size: 14px;
+  --background: var(--bg-page);
+  --foreground: var(--ink-base);
+  --card: var(--bg-elevated);
+  --card-foreground: var(--ink-base);
+  --popover: var(--bg-elevated);
+  --popover-foreground: var(--ink-base);
+  --primary: var(--brand-primary);
+  --primary-foreground: #ffffff;
+  --secondary: var(--bg-subtle);
+  --secondary-foreground: var(--ink-base);
+  --muted: var(--bg-subtle);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--bg-subtle);
+  --accent-foreground: var(--ink-base);
+  --destructive: var(--accent-error);
+  --destructive-foreground: #ffffff;
+  --border: var(--line-divider);
+  --input: transparent;
+  --input-background: var(--bg-subtle);
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: var(--brand-primary);
+  --chart-1: var(--brand-primary);
+  --chart-2: var(--brand-secondary);
+  --chart-3: var(--accent-positive);
+  --chart-4: var(--accent-warning);
+  --chart-5: var(--accent-error);
+  --radius: 12px;
+  --sidebar: var(--bg-page);
+  --sidebar-foreground: var(--ink-base);
+  --sidebar-primary: var(--brand-primary);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--bg-subtle);
+  --sidebar-accent-foreground: var(--ink-base);
+  --sidebar-border: var(--line-divider);
+  --sidebar-ring: var(--brand-primary);
+}
+
+.dark {
+  --bg-page: #0B0B0D;
+  --bg-subtle: #1A1A1D;
+  --bg-elevated: #1A1A1D;
+  --ink-strong: #F7F7F7;
+  --ink-base: #E5E5E5;
+  --ink-muted: #9CA3AF;
+  --line-divider: #374151;
+  
+  --background: var(--bg-page);
+  --foreground: var(--ink-base);
+  --card: var(--bg-elevated);
+  --card-foreground: var(--ink-base);
+  --popover: var(--bg-elevated);
+  --popover-foreground: var(--ink-base);
+  --primary: var(--brand-primary);
+  --primary-foreground: #ffffff;
+  --secondary: var(--bg-subtle);
+  --secondary-foreground: var(--ink-base);
+  --muted: var(--bg-subtle);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--bg-subtle);
+  --accent-foreground: var(--ink-base);
+  --destructive: var(--accent-error);
+  --destructive-foreground: #ffffff;
+  --border: var(--line-divider);
+  --input: var(--bg-subtle);
+  --ring: var(--brand-primary);
+  --sidebar: var(--bg-page);
+  --sidebar-foreground: var(--ink-base);
+  --sidebar-primary: var(--brand-primary);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--bg-subtle);
+  --sidebar-accent-foreground: var(--ink-base);
+  --sidebar-border: var(--line-divider);
+  --sidebar-ring: var(--brand-primary);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+/* Safe Area 지원 */
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-area-pt {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* 브랜드 색상 유틸리티 */
+.text-brand-primary {
+  color: var(--brand-primary);
+}
+
+.text-brand-secondary {
+  color: var(--brand-secondary);
+}
+
+.text-ink-strong {
+  color: var(--ink-strong);
+}
+
+.text-ink-base {
+  color: var(--ink-base);
+}
+
+.text-ink-muted {
+  color: var(--ink-muted);
+}
+
+.text-accent-positive {
+  color: var(--accent-positive);
+}
+
+.text-accent-warning {
+  color: var(--accent-warning);
+}
+
+.text-accent-error {
+  color: var(--accent-error);
+}
+
+.bg-brand-primary {
+  background-color: var(--brand-primary);
+}
+
+.bg-brand-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.bg-accent-positive {
+  background-color: var(--accent-positive);
+}
+
+.bg-accent-warning {
+  background-color: var(--accent-warning);
+}
+
+.bg-accent-error {
+  background-color: var(--accent-error);
+}

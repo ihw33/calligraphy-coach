@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-08-16 10:40:08",
+  "character": "中",
+  "overall_score": 53.3,
+  "grade": "D",
+  "detailed_scores": {
+    "thickness_consistency": 88.0,
+    "turning_accuracy": 0.0,
+    "spacing_uniformity": 50.0,
+    "stroke_order_accuracy": 75.2
+  },
+  "thickness_analysis": {
+    "mean": 12.5,
+    "max": 20.5,
+    "min": 2.5,
+    "variation": 3.8,
+    "unit": "pixels"
+  },
+  "spacing_analysis": {
+    "measurements": {
+      "stroke_1_2": 45,
+      "stroke_1_3": 90,
+      "stroke_1_4": 90,
+      "stroke_2_3": 45,
+      "stroke_2_4": 45,
+      "stroke_3_4": 80
+    },
+    "unit": "pixels"
+  },
+  "angle_analysis": {
+    "vertical_strokes": 87,
+    "horizontal_top": 3,
+    "horizontal_bottom": 2,
+    "unit": "degrees"
+  },
+  "recommendations": {
+    "immediate": [
+      "기본획 연습 30분/일",
+      "천천히 정확하게 쓰기",
+      "붓 잡는 자세 교정"
+    ],
+    "short_term": [
+      "굵기 변화 의식적 연습",
+      "꺾임 부분 부드럽게 처리",
+      "전체 균형감 향상"
+    ],
+    "long_term": [
+      "B등급(80점) 달성",
+      "다양한 서체 시도",
+      "창의적 표현 추가"
+    ]
+  },
+  "practice_characters": [
+    "十",
+    "口",
+    "日",
+    "田"
+  ]
+}

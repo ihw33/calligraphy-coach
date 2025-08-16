@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서예 분석 결과 - 中</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .timestamp {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .score-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .score-number {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .grade {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .section h2 {
+            color: #495057;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .metric-label {
+            font-weight: 500;
+            color: #495057;
+        }
+        .metric-value {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 30px;
+            background: #e9ecef;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        .recommendations {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .recommendations h3 {
+            color: #856404;
+            margin-top: 0;
+        }
+        ul {
+            color: #495057;
+            line-height: 1.8;
+        }
+        .practice-chars {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .char-box {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .char-box:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 서예 분석 결과</h1>
+        <div class="timestamp">2025-08-16 10:40:08</div>
+        
+        <div class="score-card">
+            <div class="score-number">53.3점</div>
+            <div class="grade">D등급 - 개선 필요</div>
+        </div>
+        
+        <div class="section">
+            <h2>📊 세부 점수</h2>
+            <div class="metric">
+                <span class="metric-label">굵기 일치도</span>
+                <span class="metric-value">88.0점</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 88%;">88%</div>
+            </div>
+            
+            <div class="metric">
+                <span class="metric-label">획순 정확도</span>
+                <span class="metric-value">75.2점</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 75.2%;">75%</div>
+            </div>
+            
+            <div class="metric">
+                <span class="metric-label">간격 균일성</span>
+                <span class="metric-value">50.0점</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;">50%</div>
+            </div>
+            
+            <div class="metric">
+                <span class="metric-label">꺾임 정확도</span>
+                <span class="metric-value">0.0점</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 1%;">0%</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📏 선 굵기 분석</h2>
+            <div class="metric">
+                <span class="metric-label">평균 굵기</span>
+                <span class="metric-value">12.5 픽셀</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">최대 굵기</span>
+                <span class="metric-value">20.5 픽셀</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">최소 굵기</span>
+                <span class="metric-value">2.5 픽셀</span>
+            </div>
+            <div class="metric">
+                <span class="metric-label">굵기 변화율</span>
+                <span class="metric-value">±3.8 픽셀</span>
+            </div>
+        </div>
+        
+        <div class="recommendations">
+            <h3>💡 개선 권장사항</h3>
+            <h4>즉시 실천사항:</h4>
+            <ul>
+                <li>매일 기본획 연습 30분</li>
+                <li>천천히 정확하게 쓰기</li>
+                <li>붓 잡는 자세 교정</li>
+            </ul>
+            <h4>단기 목표 (1개월):</h4>
+            <ul>
+                <li>굵기 변화 의식적 연습</li>
+                <li>꺾임 부분 부드럽게 처리</li>
+                <li>전체 균형감 향상</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 연습 추천 글자</h2>
+            <div class="practice-chars">
+                <div class="char-box">十</div>
+                <div class="char-box">口</div>
+                <div class="char-box">日</div>
+                <div class="char-box">田</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
