@@ -1,0 +1,28 @@
+{
+  "name": "calligraphy-coach",
+  "version": "1.0.0",
+  "description": "> AI 기반 서예 학습 플랫폼 - 한자와 한글 서예를 체계적으로 배우세요",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihw33/calligraphy-coach.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ihw33/calligraphy-coach/issues"
+  },
+  "homepage": "https://github.com/ihw33/calligraphy-coach#readme",
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}

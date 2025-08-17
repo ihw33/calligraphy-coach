@@ -1,0 +1,50 @@
+{
+  "name": "HomeScreen",
+  "type": "Frame",
+  "width": 390,
+  "height": 844,
+  "description": "iPhone 14 Pro 홈 화면",
+  "background": "#F5F5DC",
+  "components": [
+    {
+      "type": "Header",
+      "content": {
+        "title": "서예 교실",
+        "subtitle": "AI와 함께하는 한자 학습"
+      }
+    },
+    {
+      "type": "MenuGrid",
+      "items": [
+        {
+          "id": "learn",
+          "icon": "📚",
+          "title": "학습하기",
+          "description": "단계별 한자 학습"
+        },
+        {
+          "id": "practice",
+          "icon": "✍️",
+          "title": "연습하기",
+          "description": "자유 연습 모드"
+        },
+        {
+          "id": "camera",
+          "icon": "📷",
+          "title": "촬영 분석",
+          "description": "작품 촬영 후 분석"
+        },
+        {
+          "id": "progress",
+          "icon": "📊",
+          "title": "진도 확인",
+          "description": "학습 진행 상황"
+        }
+      ]
+    },
+    {
+      "type": "BottomNav",
+      "items": ["홈", "학습", "카메라", "진도", "설정"]
+    }
+  ]
+}

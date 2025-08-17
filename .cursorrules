@@ -1,0 +1,26 @@
+# Cursor + Figma MCP Integration Rules
+
+## Project: Calligraphy Coach (서예 교실)
+AI-powered calligraphy learning app
+
+## Figma Connection
+- WebSocket: ws://localhost:3055
+- Channel: kjmu80tt
+- MCP Server: claude-talk-to-figma-mcp
+
+## Design System
+- Primary: #1A1A1A (먹색)
+- Secondary: #8B4513 (붓색)
+- Accent: #DC143C (인주색)  
+- Background: #F5F5DC (화선지색)
+
+## Component Structure
+- React Native + TypeScript
+- FastAPI Backend
+- AI Analysis Engine (Python)
+
+## Commands
+When working with Figma:
+1. Always connect first: @figma connect to channel kjmu80tt
+2. Create mobile frames: 390x844 (iPhone 14)
+3. Export components to: /figma-source-code/v.00/

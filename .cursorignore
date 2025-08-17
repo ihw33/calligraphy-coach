@@ -1,0 +1,13 @@
+# Cursor가 무시할 파일들
+node_modules/
+venv/
+__pycache__/
+*.pyc
+.git/
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+*.gif
+*_output/
+sample_images/

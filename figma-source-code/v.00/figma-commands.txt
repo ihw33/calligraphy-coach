@@ -1,0 +1,18 @@
+# Figma MCP 명령어 모음
+
+## 1. 기본 프레임 생성
+Talk to Figma, channel 380v27o4
+Create a new frame called "Calligraphy Coach App" with width 390 and height 844
+
+## 2. 홈 화면 구성
+Add a rectangle at (0, 0) with width 390 and height 100 filled with #1A1A1A
+Add text "서예 교실" at (20, 40) with size 32 and color #FFFFFF
+Add text "AI와 함께하는 한자 학습" at (20, 75) with size 16 and color #CCCCCC
+
+## 3. 메뉴 버튼 생성
+Create a rectangle at (20, 120) with width 160 height 160 filled with #F5F5DC
+Add text "학습하기" at (40, 200) with size 18 and color #1A1A1A
+
+## 4. 하단 네비게이션
+Create a rectangle at (0, 754) with width 390 height 90 filled with #FFFFFF
+Add icons for Home, Learn, Camera, Progress, Settings

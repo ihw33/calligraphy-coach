@@ -1,0 +1,16 @@
+{
+  "cursor.ai.model": "gpt-4",
+  "cursor.ai.provider": "openai",
+  "cursor.ai.apiKey": "YOUR_OPENAI_API_KEY",
+  "cursor.ai.temperature": 0.7,
+  "cursor.ai.maxTokens": 4000,
+  "cursor.ai.systemPrompt": "You are ChatGPT-5, an advanced AI assistant helping with the Calligraphy Coach app development. You have access to Figma designs and can generate React Native code.",
+  "cursor.ai.customModels": [
+    {
+      "name": "ChatGPT-5",
+      "provider": "openai",
+      "model": "gpt-4-turbo-preview",
+      "apiEndpoint": "https://api.openai.com/v1/chat/completions"
+    }
+  ]
+}
